@@ -1,0 +1,33 @@
+$primary-font-family: "Crimson Text", sans-serif;
+$secondary-font-family: "Work Sans", sans-serif;
+$color-green: #74C69D;
+$color-black: #212529;
+
+$breakpoint-laptop: 1400px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font-family;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@import "header";
+@import "hero";
+@import "partners";
+@import "secondhero";
+@import "thirdhero";
+@import "team";
+@import "footer";
+
+@import "general";
+

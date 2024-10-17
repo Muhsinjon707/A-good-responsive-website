@@ -1,0 +1,101 @@
+.team {
+  margin-bottom: 54px;
+
+  .team__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: center;
+      color: $color-black;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-family: $secondary-font-family;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 45px;
+      width: 40%;
+    }
+
+    .team__cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 47px;
+      margin-bottom: 45px;
+
+      .card {
+        border: none;
+        border-radius: 5px;
+        box-shadow: 3px 4px 12px 1px #00000040;
+        width: 280px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 25px;
+        row-gap: 18px;
+
+        img {
+          width: 175px;
+          height: 175px;
+          margin: 0 auto;
+        }
+
+        .card__name {
+          align-self: start;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 30px;
+          text-align: left;
+          color: $color-black;
+        }
+
+        .card__position {
+          align-self: start;
+          font-family: $secondary-font-family;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 18.75px;
+          text-align: left;
+          color: #21252980;
+          text-transform: uppercase;
+        }
+      }
+
+      @media screen and (max-width: 1140px) {
+        .card {
+          width: 250px;
+          height: 270px;
+
+          row-gap: 10px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1405px) {
+      .team__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+      }
+    }
+
+    @media screen and (max-width: 720px) {
+        .team__cards {
+            // gap: 100px;
+            flex-direction: column;
+            row-gap: 35px;
+        }
+    }
+  }
+}
